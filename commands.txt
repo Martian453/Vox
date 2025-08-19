@@ -1,0 +1,7 @@
+python -m venv venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\venv\Scripts\Activate.ps1
+.\venv\Scripts\activate.bat
+pip install cohere python-dotenv
+pip freeze > requirements.txt
+ni .env
